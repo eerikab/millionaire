@@ -1,0 +1,17 @@
+﻿<Window x:Class="who_wants_to_be_a_millionaire.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:who_wants_to_be_a_millionaire"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="43*"/>
+            <ColumnDefinition Width="7*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="START GAME" HorizontalAlignment="Left" VerticalAlignment="Center" Click="open_new_window" Height="61" Width="176" Margin="312,0,0,0" FontSize="20" Background="#FF1E3686"/>
+
+    </Grid>
+</Window>
