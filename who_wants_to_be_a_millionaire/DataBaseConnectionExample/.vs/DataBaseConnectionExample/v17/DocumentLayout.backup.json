@@ -1,0 +1,161 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\DataBaseConnectionExample\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DFD8313E-42C5-444B-802E-5707AC552F17}|DataBaseConnectionExample.csproj|c:\\users\\eerik\\documents\\github\\millionaire\\who_wants_to_be_a_millionaire\\databaseconnectionexample\\databaseconnectionexample.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DFD8313E-42C5-444B-802E-5707AC552F17}|DataBaseConnectionExample.csproj|solutionrelative:databaseconnectionexample.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFD8313E-42C5-444B-802E-5707AC552F17}|DataBaseConnectionExample.csproj|c:\\users\\eerik\\documents\\github\\millionaire\\who_wants_to_be_a_millionaire\\databaseconnectionexample\\dbrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DFD8313E-42C5-444B-802E-5707AC552F17}|DataBaseConnectionExample.csproj|solutionrelative:dbrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFD8313E-42C5-444B-802E-5707AC552F17}|DataBaseConnectionExample.csproj|c:\\users\\eerik\\documents\\github\\millionaire\\who_wants_to_be_a_millionaire\\databaseconnectionexample\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DFD8313E-42C5-444B-802E-5707AC552F17}|DataBaseConnectionExample.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFD8313E-42C5-444B-802E-5707AC552F17}|DataBaseConnectionExample.csproj|c:\\users\\eerik\\documents\\github\\millionaire\\who_wants_to_be_a_millionaire\\databaseconnectionexample\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DFD8313E-42C5-444B-802E-5707AC552F17}|DataBaseConnectionExample.csproj|solutionrelative:assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFD8313E-42C5-444B-802E-5707AC552F17}|DataBaseConnectionExample.csproj|c:\\users\\eerik\\documents\\github\\millionaire\\who_wants_to_be_a_millionaire\\databaseconnectionexample\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DFD8313E-42C5-444B-802E-5707AC552F17}|DataBaseConnectionExample.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFD8313E-42C5-444B-802E-5707AC552F17}|DataBaseConnectionExample.csproj|c:\\users\\eerik\\documents\\github\\millionaire\\who_wants_to_be_a_millionaire\\databaseconnectionexample\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DFD8313E-42C5-444B-802E-5707AC552F17}|DataBaseConnectionExample.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\eerik\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\9.0.2\\buildTransitive\\netcoreapp2.0\\Microsoft.Bcl.AsyncInterfaces.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\DataBaseConnectionExample\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\DataBaseConnectionExample\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-05T22:30:15.016Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\DataBaseConnectionExample\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\DataBaseConnectionExample\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-05T22:28:59.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DataBaseConnectionExample.csproj",
+              "DocumentMoniker": "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\DataBaseConnectionExample\\DataBaseConnectionExample.csproj",
+              "RelativeDocumentMoniker": "DataBaseConnectionExample.csproj",
+              "ToolTip": "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\DataBaseConnectionExample\\DataBaseConnectionExample.csproj",
+              "RelativeToolTip": "DataBaseConnectionExample.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-05T22:28:54.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\DataBaseConnectionExample\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\DataBaseConnectionExample\\AssemblyInfo.cs",
+              "RelativeToolTip": "AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T22:28:51.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DbRepository.cs",
+              "DocumentMoniker": "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\DataBaseConnectionExample\\DbRepository.cs",
+              "RelativeDocumentMoniker": "DbRepository.cs",
+              "ToolTip": "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\DataBaseConnectionExample\\DbRepository.cs",
+              "RelativeToolTip": "DbRepository.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAwwAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T22:28:38.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\DataBaseConnectionExample\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\DataBaseConnectionExample\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAjwB4AAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T22:27:37.331Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Microsoft.Bcl.AsyncInterfaces.targets",
+              "DocumentMoniker": "C:\\Users\\eerik\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\9.0.2\\buildTransitive\\netcoreapp2.0\\Microsoft.Bcl.AsyncInterfaces.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\9.0.2\\buildTransitive\\netcoreapp2.0\\Microsoft.Bcl.AsyncInterfaces.targets",
+              "ToolTip": "C:\\Users\\eerik\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\9.0.2\\buildTransitive\\netcoreapp2.0\\Microsoft.Bcl.AsyncInterfaces.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\9.0.2\\buildTransitive\\netcoreapp2.0\\Microsoft.Bcl.AsyncInterfaces.targets",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-03-05T22:22:04.65Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 921,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

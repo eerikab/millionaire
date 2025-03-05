@@ -8,19 +8,19 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\paulk\\.nuget\\packages\\": {}
+    "C:\\Users\\eerik\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\paulk\\OneDrive\\Desktop\\tarkvara arendus\\who_wants_to_be_a_millionaire\\who_wants_to_be_a_millionaire.csproj",
+      "projectUniqueName": "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\who_wants_to_be_a_millionaire.csproj",
       "projectName": "who_wants_to_be_a_millionaire",
-      "projectPath": "C:\\Users\\paulk\\OneDrive\\Desktop\\tarkvara arendus\\who_wants_to_be_a_millionaire\\who_wants_to_be_a_millionaire.csproj",
-      "packagesPath": "C:\\Users\\paulk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\paulk\\OneDrive\\Desktop\\tarkvara arendus\\who_wants_to_be_a_millionaire\\obj\\",
+      "projectPath": "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\who_wants_to_be_a_millionaire.csproj",
+      "packagesPath": "C:\\Users\\eerik\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\paulk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\eerik\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -69,7 +69,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.402/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

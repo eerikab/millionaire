@@ -18,3 +18,12 @@ C:\Users\paulk\OneDrive\Desktop\tarkvara arendus\who_wants_to_be_a_millionaire\o
 C:\Users\paulk\OneDrive\Desktop\tarkvara arendus\who_wants_to_be_a_millionaire\obj\Debug\net8.0-windows\who_wants_to_be_a_millionaire.pdb
 C:\Users\paulk\OneDrive\Desktop\tarkvara arendus\who_wants_to_be_a_millionaire\obj\Debug\net8.0-windows\who_wants_to_be_a_millionaire.genruntimeconfig.cache
 C:\Users\paulk\OneDrive\Desktop\tarkvara arendus\who_wants_to_be_a_millionaire\obj\Debug\net8.0-windows\ref\who_wants_to_be_a_millionaire.dll
+C:\Users\eerik\Documents\GitHub\millionaire\who_wants_to_be_a_millionaire\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\eerik\Documents\GitHub\millionaire\who_wants_to_be_a_millionaire\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\eerik\Documents\GitHub\millionaire\who_wants_to_be_a_millionaire\obj\Debug\net8.0-windows\who_wants_to_be_a_millionaire_MarkupCompile.cache
+C:\Users\eerik\Documents\GitHub\millionaire\who_wants_to_be_a_millionaire\obj\Debug\net8.0-windows\who_wants_to_be_a_millionaire_MarkupCompile.lref
+C:\Users\eerik\Documents\GitHub\millionaire\who_wants_to_be_a_millionaire\obj\Debug\net8.0-windows\who_wants_to_be_a_millionaire.dll
+C:\Users\eerik\Documents\GitHub\millionaire\who_wants_to_be_a_millionaire\obj\Debug\net8.0-windows\refint\who_wants_to_be_a_millionaire.dll
+C:\Users\eerik\Documents\GitHub\millionaire\who_wants_to_be_a_millionaire\obj\Debug\net8.0-windows\who_wants_to_be_a_millionaire.pdb
+C:\Users\eerik\Documents\GitHub\millionaire\who_wants_to_be_a_millionaire\obj\Debug\net8.0-windows\DataBaseConnectionExample\App.g.cs
+C:\Users\eerik\Documents\GitHub\millionaire\who_wants_to_be_a_millionaire\obj\Debug\net8.0-windows\DataBaseConnectionExample\MainWindow.g.cs

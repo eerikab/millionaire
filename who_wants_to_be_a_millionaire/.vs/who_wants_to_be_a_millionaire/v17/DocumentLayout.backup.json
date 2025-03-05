@@ -1,22 +1,49 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\paulk\\OneDrive\\Desktop\\tarkvara arendus\\who_wants_to_be_a_millionaire\\",
+  "WorkspaceRootPath": "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ECA5D7D5-D9D4-4AAB-BFE4-9CBEC9DFE056}|who_wants_to_be_a_millionaire.csproj|c:\\users\\paulk\\onedrive\\desktop\\tarkvara arendus\\who_wants_to_be_a_millionaire\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECA5D7D5-D9D4-4AAB-BFE4-9CBEC9DFE056}|who_wants_to_be_a_millionaire.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{26759363-D3C5-4D34-9717-1D82C04B103A}|DataBaseConnectionExample\\DataBaseConnectionExample.csproj|c:\\users\\eerik\\documents\\github\\millionaire\\who_wants_to_be_a_millionaire\\databaseconnectionexample\\databaseconnectionexample.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{26759363-D3C5-4D34-9717-1D82C04B103A}|DataBaseConnectionExample\\DataBaseConnectionExample.csproj|solutionrelative:databaseconnectionexample\\databaseconnectionexample.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECA5D7D5-D9D4-4AAB-BFE4-9CBEC9DFE056}|who_wants_to_be_a_millionaire.csproj|c:\\users\\paulk\\onedrive\\desktop\\tarkvara arendus\\who_wants_to_be_a_millionaire\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{ECA5D7D5-D9D4-4AAB-BFE4-9CBEC9DFE056}|who_wants_to_be_a_millionaire.csproj|c:\\users\\eerik\\documents\\github\\millionaire\\who_wants_to_be_a_millionaire\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{ECA5D7D5-D9D4-4AAB-BFE4-9CBEC9DFE056}|who_wants_to_be_a_millionaire.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECA5D7D5-D9D4-4AAB-BFE4-9CBEC9DFE056}|who_wants_to_be_a_millionaire.csproj|c:\\users\\paulk\\onedrive\\desktop\\tarkvara arendus\\who_wants_to_be_a_millionaire\\window2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECA5D7D5-D9D4-4AAB-BFE4-9CBEC9DFE056}|who_wants_to_be_a_millionaire.csproj|solutionrelative:window2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{26759363-D3C5-4D34-9717-1D82C04B103A}|DataBaseConnectionExample\\DataBaseConnectionExample.csproj|c:\\users\\eerik\\documents\\github\\millionaire\\who_wants_to_be_a_millionaire\\databaseconnectionexample\\dbrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26759363-D3C5-4D34-9717-1D82C04B103A}|DataBaseConnectionExample\\DataBaseConnectionExample.csproj|solutionrelative:databaseconnectionexample\\dbrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECA5D7D5-D9D4-4AAB-BFE4-9CBEC9DFE056}|who_wants_to_be_a_millionaire.csproj|c:\\users\\paulk\\onedrive\\desktop\\tarkvara arendus\\who_wants_to_be_a_millionaire\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{ECA5D7D5-D9D4-4AAB-BFE4-9CBEC9DFE056}|who_wants_to_be_a_millionaire.csproj|c:\\users\\eerik\\documents\\github\\millionaire\\who_wants_to_be_a_millionaire\\databaseconnectionexample\\obj\\debug\\net6.0-windows\\app.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5D7D5-D9D4-4AAB-BFE4-9CBEC9DFE056}|who_wants_to_be_a_millionaire.csproj|solutionrelative:databaseconnectionexample\\obj\\debug\\net6.0-windows\\app.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26759363-D3C5-4D34-9717-1D82C04B103A}|DataBaseConnectionExample\\DataBaseConnectionExample.csproj|c:\\users\\eerik\\documents\\github\\millionaire\\who_wants_to_be_a_millionaire\\databaseconnectionexample\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26759363-D3C5-4D34-9717-1D82C04B103A}|DataBaseConnectionExample\\DataBaseConnectionExample.csproj|solutionrelative:databaseconnectionexample\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\eerik\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\9.0.2\\buildTransitive\\netcoreapp2.0\\Microsoft.Bcl.AsyncInterfaces.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5D7D5-D9D4-4AAB-BFE4-9CBEC9DFE056}|who_wants_to_be_a_millionaire.csproj|c:\\users\\eerik\\documents\\github\\millionaire\\who_wants_to_be_a_millionaire\\who_wants_to_be_a_millionaire.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{ECA5D7D5-D9D4-4AAB-BFE4-9CBEC9DFE056}|who_wants_to_be_a_millionaire.csproj|solutionrelative:who_wants_to_be_a_millionaire.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5D7D5-D9D4-4AAB-BFE4-9CBEC9DFE056}|who_wants_to_be_a_millionaire.csproj|c:\\users\\eerik\\documents\\github\\millionaire\\who_wants_to_be_a_millionaire\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5D7D5-D9D4-4AAB-BFE4-9CBEC9DFE056}|who_wants_to_be_a_millionaire.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5D7D5-D9D4-4AAB-BFE4-9CBEC9DFE056}|who_wants_to_be_a_millionaire.csproj|c:\\users\\eerik\\documents\\github\\millionaire\\who_wants_to_be_a_millionaire\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5D7D5-D9D4-4AAB-BFE4-9CBEC9DFE056}|who_wants_to_be_a_millionaire.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5D7D5-D9D4-4AAB-BFE4-9CBEC9DFE056}|who_wants_to_be_a_millionaire.csproj|c:\\users\\eerik\\documents\\github\\millionaire\\who_wants_to_be_a_millionaire\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{ECA5D7D5-D9D4-4AAB-BFE4-9CBEC9DFE056}|who_wants_to_be_a_millionaire.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5D7D5-D9D4-4AAB-BFE4-9CBEC9DFE056}|who_wants_to_be_a_millionaire.csproj|c:\\users\\eerik\\documents\\github\\millionaire\\who_wants_to_be_a_millionaire\\window2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5D7D5-D9D4-4AAB-BFE4-9CBEC9DFE056}|who_wants_to_be_a_millionaire.csproj|solutionrelative:window2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,9 +59,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\paulk\\OneDrive\\Desktop\\tarkvara arendus\\who_wants_to_be_a_millionaire\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\paulk\\OneDrive\\Desktop\\tarkvara arendus\\who_wants_to_be_a_millionaire\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-02-06T07:51:02.096Z",
@@ -44,40 +71,157 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "DataBaseConnectionExample",
+              "DocumentMoniker": "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\DataBaseConnectionExample\\DataBaseConnectionExample.csproj",
+              "RelativeDocumentMoniker": "DataBaseConnectionExample\\DataBaseConnectionExample.csproj",
+              "ToolTip": "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\DataBaseConnectionExample\\DataBaseConnectionExample.csproj",
+              "RelativeToolTip": "DataBaseConnectionExample\\DataBaseConnectionExample.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-05T22:38:27.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.g.i.cs",
+              "DocumentMoniker": "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\DataBaseConnectionExample\\obj\\Debug\\net6.0-windows\\App.g.i.cs",
+              "RelativeDocumentMoniker": "DataBaseConnectionExample\\obj\\Debug\\net6.0-windows\\App.g.i.cs",
+              "ToolTip": "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\DataBaseConnectionExample\\obj\\Debug\\net6.0-windows\\App.g.i.cs",
+              "RelativeToolTip": "DataBaseConnectionExample\\obj\\Debug\\net6.0-windows\\App.g.i.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAASwDAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T22:38:00.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\DataBaseConnectionExample\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "DataBaseConnectionExample\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\DataBaseConnectionExample\\AssemblyInfo.cs",
+              "RelativeToolTip": "DataBaseConnectionExample\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T22:37:56.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DbRepository.cs",
+              "DocumentMoniker": "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\DataBaseConnectionExample\\DbRepository.cs",
+              "RelativeDocumentMoniker": "DataBaseConnectionExample\\DbRepository.cs",
+              "ToolTip": "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\DataBaseConnectionExample\\DbRepository.cs",
+              "RelativeToolTip": "DataBaseConnectionExample\\DbRepository.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAWwBQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T22:35:53.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Microsoft.Bcl.AsyncInterfaces.targets",
+              "DocumentMoniker": "C:\\Users\\eerik\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\9.0.2\\buildTransitive\\netcoreapp2.0\\Microsoft.Bcl.AsyncInterfaces.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\9.0.2\\buildTransitive\\netcoreapp2.0\\Microsoft.Bcl.AsyncInterfaces.targets",
+              "ToolTip": "C:\\Users\\eerik\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\9.0.2\\buildTransitive\\netcoreapp2.0\\Microsoft.Bcl.AsyncInterfaces.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\9.0.2\\buildTransitive\\netcoreapp2.0\\Microsoft.Bcl.AsyncInterfaces.targets",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-03-05T22:34:43.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T22:08:07.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "who_wants_to_be_a_millionaire.csproj",
+              "DocumentMoniker": "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\who_wants_to_be_a_millionaire.csproj",
+              "RelativeDocumentMoniker": "who_wants_to_be_a_millionaire.csproj",
+              "ToolTip": "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\who_wants_to_be_a_millionaire.csproj",
+              "RelativeToolTip": "who_wants_to_be_a_millionaire.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-05T22:03:21.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\paulk\\OneDrive\\Desktop\\tarkvara arendus\\who_wants_to_be_a_millionaire\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\paulk\\OneDrive\\Desktop\\tarkvara arendus\\who_wants_to_be_a_millionaire\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAlwBkAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAArwBsAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-06T07:50:50.781Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "Window2.cs",
-              "DocumentMoniker": "C:\\Users\\paulk\\OneDrive\\Desktop\\tarkvara arendus\\who_wants_to_be_a_millionaire\\Window2.cs",
+              "DocumentMoniker": "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\Window2.cs",
               "RelativeDocumentMoniker": "Window2.cs",
-              "ToolTip": "C:\\Users\\paulk\\OneDrive\\Desktop\\tarkvara arendus\\who_wants_to_be_a_millionaire\\Window2.cs",
+              "ToolTip": "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\Window2.cs",
               "RelativeToolTip": "Window2.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-06T08:13:29.769Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\paulk\\OneDrive\\Desktop\\tarkvara arendus\\who_wants_to_be_a_millionaire\\App.xaml",
+              "DocumentMoniker": "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
-              "ToolTip": "C:\\Users\\paulk\\OneDrive\\Desktop\\tarkvara arendus\\who_wants_to_be_a_millionaire\\App.xaml",
+              "ToolTip": "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\App.xaml",
               "RelativeToolTip": "App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-02-06T07:56:55.136Z",
               "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 921,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
             }
           ]
         }

@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = who_wants_to_be_a_millionaire
-build_property.ProjectDir = C:\Users\paulk\OneDrive\Desktop\tarkvara arendus\who_wants_to_be_a_millionaire\
+build_property.ProjectDir = C:\Users\eerik\Documents\GitHub\millionaire\who_wants_to_be_a_millionaire\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
