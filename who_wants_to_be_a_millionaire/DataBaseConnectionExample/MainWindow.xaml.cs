@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataBaseConnectionExample;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace DataBaseConnectionExample
+namespace who_wants_to_be_a_millionaire
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -25,10 +26,25 @@ namespace DataBaseConnectionExample
             InitializeComponent();
         }
 
-        private void btn_LoadData_Click(object sender, RoutedEventArgs e)
+        private void open_new_window(object sender, RoutedEventArgs e)
         {
+            Window2 win2 = new Window2();
+            // this.Visibility = Visibility.Hidden; //peidame selle akna
+            // win2.Show();
+
+            // test andmebaasi pärimiseks
             DbRepository dbRepository = new DbRepository();
-            lbl_databaseData.Content = dbRepository.GetQuestions(txt_Id.Text);
+            var data = dbRepository.GetQuestions();
+            string data_string = "";
+            foreach (var line in data)
+            {
+                foreach (string key in line)
+                {
+                    data_string += key+", ";
+                }
+                data_string += "\n";
+            }
+            this.Content = data_string;
         }
     }
 }

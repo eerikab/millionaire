@@ -2,6 +2,10 @@
 using System;
 using System.IO;
 using Microsoft.Extensions.Configuration;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 
 namespace DataBaseConnectionExample
@@ -24,11 +28,11 @@ namespace DataBaseConnectionExample
             };
         }
 
-        public string GetQuestions(string id)
+        public List<List<string>> GetQuestions()
         {
             using (Connection)
             {
-                string dataFromDatabase = "";
+                List<List<string>> dataFromDatabase = new List<List<string>> ();
                 try
                 {
                     Connection.Open();
@@ -41,25 +45,34 @@ namespace DataBaseConnectionExample
                             {
                                 while (dataReader.Read())
                                 {
-                                    dataFromDatabase = "FirstName: " + dataReader[0].ToString();
+                                    List<string> currentRow = new List<string>()
+                                    {
+                                        ""+dataReader["question"].ToString(),
+                                        ""+dataReader["a"].ToString(),
+                                        ""+dataReader["b"].ToString(),
+                                        ""+dataReader["c"].ToString(),
+                                        ""+dataReader["d"].ToString(),
+                                        ""+dataReader["correct"].ToString(),
+                                        ""+dataReader["level"].ToString(),
+                                    };
+                                    dataFromDatabase.Add(currentRow);
                                 }
                             }
                             else
                             {
-                                dataFromDatabase = "No data";
+                                dataFromDatabase.Add(new List<string> { "No data" });
                             }
                         }
                     }
                 }
                 catch (SqlException e)
                 {
-                    dataFromDatabase = "No Database Connection ! Error: \" + e.Message";
+                    dataFromDatabase.Add(new List<string> { "No Database Connection ! Error: \" + e.Message" });
                     throw new Exception("No Database Connection ! Error: " + e.Message);
                 }
                 Connection.Close();
                 return dataFromDatabase;
             }
         }
-
     }
 }
