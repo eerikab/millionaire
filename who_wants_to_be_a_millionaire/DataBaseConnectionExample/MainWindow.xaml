@@ -11,7 +11,7 @@
             <ColumnDefinition Width="43*"/>
             <ColumnDefinition Width="7*"/>
         </Grid.ColumnDefinitions>
-        <Button Content="START GAME" HorizontalAlignment="Left" VerticalAlignment="Center" Click="open_new_window" Height="61" Width="176" Margin="312,0,0,0" FontSize="20" Background="#FF1E3686"/>
+        <Button Content="START GAME" HorizontalAlignment="Left" VerticalAlignment="Center" Click="open_new_page" Height="61" Width="176" Margin="312,0,0,0" FontSize="20" Background="#FF1E3686"/>
 
     </Grid>
 </Window>

@@ -1,7 +1,9 @@
 ﻿using DataBaseConnectionExample;
+using Millionaire;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -26,11 +28,10 @@ namespace who_wants_to_be_a_millionaire
             InitializeComponent();
         }
 
-        private void open_new_window(object sender, RoutedEventArgs e)
+        private void open_new_page(object sender, RoutedEventArgs e)
         {
-            Window2 win2 = new Window2();
-            // this.Visibility = Visibility.Hidden; //peidame selle akna
-            // win2.Show();
+            Page1 pg = new Page1(); //uue lehe loomine
+            this.Content = pg;
 
             // test andmebaasi pärimiseks
             DbRepository dbRepository = new DbRepository();
@@ -44,7 +45,7 @@ namespace who_wants_to_be_a_millionaire
                 }
                 data_string += "\n";
             }
-            this.Content = data_string;
+            //this.Content = data_string;
         }
     }
 }
