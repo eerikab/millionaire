@@ -28,27 +28,21 @@ namespace Millionaire
 
             DbRepository dbRepository = new DbRepository();
             var data = dbRepository.GetQuestions();
-            string data_string = "";
-            foreach (var line in data)
-            {
-                foreach (string key in line)
-                {
-                    data_string += key + ", ";
-                }
-                data_string += "\n";
-            }
+            var question_id = 0;
 
-            Question_label.Content = data_string; //siia oleks vaja panna ainult küsimus
-            Answer_A.Content = data_string; //siia oleks vaja vastus A
-            Answer_B.Content = data_string; //siia oleks vaja vastus B
-            Answer_C.Content = data_string; //siia oleks vaja vastus C
-            Answer_D.Content = data_string; //siia oleks vaja vastus D
+            Question_label.Content = data[question_id][0]; //siia oleks vaja panna ainult küsimus
+            Answer_A.Content = data[question_id][1]; //siia oleks vaja vastus A
+            Answer_B.Content = data[question_id][2]; //siia oleks vaja vastus B
+            Answer_C.Content = data[question_id][3]; //siia oleks vaja vastus C
+            Answer_D.Content = data[question_id][4]; //siia oleks vaja vastus D
+
+            var correctAnswer = data[question_id][5];
 
         }
 
         private void Chose_A(object sender, RoutedEventArgs e)
         {
-            /* if (correctAnswer == "A") SIIA OLEKS VAJA ÕIGE VASTUSE TÄHTE
+            /* if (correctAnswer == "a") SIIA OLEKS VAJA ÕIGE VASTUSE TÄHTE
              {
                  Result_label.Content = "Correct answer!";
                  Result_label.Foreground = System.Windows.Media.Brushes.Green;

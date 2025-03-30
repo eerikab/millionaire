@@ -122,3 +122,5 @@ C:\Users\paulk\OneDrive\Documents\GitHub\millionaire\who_wants_to_be_a_millionai
 C:\Users\paulk\OneDrive\Documents\GitHub\millionaire\who_wants_to_be_a_millionaire\DataBaseConnectionExample\obj\Debug\net6.0-windows\ref\Millionaire.dll
 C:\Users\paulk\OneDrive\Documents\GitHub\millionaire\who_wants_to_be_a_millionaire\DataBaseConnectionExample\obj\Debug\net6.0-windows\Page1.g.cs
 C:\Users\paulk\OneDrive\Documents\GitHub\millionaire\who_wants_to_be_a_millionaire\DataBaseConnectionExample\obj\Debug\net6.0-windows\Page1.baml
+C:\Users\eerik\Documents\GitHub\millionaire\who_wants_to_be_a_millionaire\DataBaseConnectionExample\obj\Debug\net6.0-windows\Page1.g.cs
+C:\Users\eerik\Documents\GitHub\millionaire\who_wants_to_be_a_millionaire\DataBaseConnectionExample\obj\Debug\net6.0-windows\Page1.baml
