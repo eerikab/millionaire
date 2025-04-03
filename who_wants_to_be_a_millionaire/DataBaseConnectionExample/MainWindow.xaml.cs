@@ -32,20 +32,6 @@ namespace who_wants_to_be_a_millionaire
         {
             Page1 pg = new Page1(); //uue lehe loomine
             this.Content = pg;
-
-            // test andmebaasi pärimiseks
-            DbRepository dbRepository = new DbRepository();
-            var data = dbRepository.GetQuestions();
-            string data_string = "";
-            foreach (var line in data)
-            {
-                foreach (string key in line)
-                {
-                    data_string += key+", ";
-                }
-                data_string += "\n";
-            }
-            //this.Content = data_string;
         }
     }
 }

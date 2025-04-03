@@ -21,52 +21,62 @@ namespace Millionaire
     /// </summary>
     public partial class Page1 : Page
     {
+        public string correctAnswer = "";
+        public List<List<string>> data;
         
         public Page1()
         {
             InitializeComponent();
 
             DbRepository dbRepository = new DbRepository();
-            var data = dbRepository.GetQuestions();
-            var question_id = 0;
+            data = dbRepository.GetQuestions();
+            SetQuestion(0);
+        }
 
+        private void SetQuestion(int question_id)
+        {
             Question_label.Content = data[question_id][0]; //siia oleks vaja panna ainult küsimus
-            Answer_A.Content = data[question_id][1]; //siia oleks vaja vastus A
-            Answer_B.Content = data[question_id][2]; //siia oleks vaja vastus B
-            Answer_C.Content = data[question_id][3]; //siia oleks vaja vastus C
-            Answer_D.Content = data[question_id][4]; //siia oleks vaja vastus D
+            Answer_A.Content = "A: " + data[question_id][1]; //siia oleks vaja vastus A
+            Answer_B.Content = "B: " + data[question_id][2]; //siia oleks vaja vastus B
+            Answer_C.Content = "C: " + data[question_id][3]; //siia oleks vaja vastus C
+            Answer_D.Content = "D: " + data[question_id][4]; //siia oleks vaja vastus D
 
-            var correctAnswer = data[question_id][5];
+            correctAnswer = data[question_id][5];
+            int level = int.Parse(data[question_id][6]);
+        }
 
+        private void Select(string selected)
+        {
+            if (correctAnswer == selected)
+            {
+                Result_label.Content = "Correct answer!";
+                Result_label.Foreground = System.Windows.Media.Brushes.Green;
+            }
+            else
+            {
+                Result_label.Content = "Game over!";
+                Result_label.Foreground = System.Windows.Media.Brushes.Red;
+            }
         }
 
         private void Chose_A(object sender, RoutedEventArgs e)
         {
-            /* if (correctAnswer == "a") SIIA OLEKS VAJA ÕIGE VASTUSE TÄHTE
-             {
-                 Result_label.Content = "Correct answer!";
-                 Result_label.Foreground = System.Windows.Media.Brushes.Green;
-             }
-             else
-             {
-                 Result_label.Content = "Game over!";
-                 Result_label.Foreground = System.Windows.Media.Brushes.Red;
-             } */
+            Select("a");
         }
 
         private void Chose_B(object sender, RoutedEventArgs e)
         {
-
+            Select("b");
         }
 
         private void Chose_C(object sender, RoutedEventArgs e)
         {
-
+            Select("c");
         }
 
         private void Chose_D(object sender, RoutedEventArgs e)
         {
-
+            Select("d");
         }
     }
 }
