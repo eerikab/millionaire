@@ -23,7 +23,8 @@ namespace Millionaire
     {
         public string correctAnswer = "";
         public List<List<string>> data;
-        
+        public int level = 2;
+
         public Page1()
         {
             InitializeComponent();
@@ -45,12 +46,26 @@ namespace Millionaire
             int level = int.Parse(data[question_id][6]);
         }
 
-        private void Select(string selected)
+        private async void Select(string selected)
         {
             if (correctAnswer == selected)
             {
                 Result_label.Content = "Correct answer!";
                 Result_label.Foreground = System.Windows.Media.Brushes.Green;
+
+                var money_label = this.FindName("money_label_" + level.ToString()) as Label;
+                var previous_money_label = this.FindName("money_label_" + (level-1).ToString()) as Label;
+
+                money_label.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFFFAE00"));//paneb võidu summa tausta oranžiks
+                money_label.Foreground = System.Windows.Media.Brushes.White;//paneb võidusumma teksti valgeks
+
+                previous_money_label.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#00FFFFFF"));//taastab eelmise võidu summa tausta
+                previous_money_label.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFFF6E00"));//taastab eelmise võidu summa teksti
+
+                await Task.Delay(1000); // 1 sekund ooteaega
+                Result_label.Content = "";
+                level += 1;
+                SetQuestion(level);//paneb uued küsimused ja vastused
             }
             else
             {
@@ -77,6 +92,16 @@ namespace Millionaire
         private void Chose_D(object sender, RoutedEventArgs e)
         {
             Select("d");
+        }
+
+        private void click_lifeline_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void click_lifeline_2(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

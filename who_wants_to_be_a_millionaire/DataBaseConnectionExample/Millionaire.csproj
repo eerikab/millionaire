@@ -8,8 +8,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="whowanttobeamillionairepilt-ezgif.com-webp-to-jpg-converter.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="whowanttobeamillionairepilt-ezgif.com-webp-to-jpg-converter.jpg" />
   </ItemGroup>
 
   <ItemGroup>

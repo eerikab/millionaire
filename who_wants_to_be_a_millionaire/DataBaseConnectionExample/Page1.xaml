@@ -9,11 +9,33 @@
       Title="Page1">
 
     <Grid>
-        <Label x:Name="Question_label" Content="Question" HorizontalAlignment="Left" Margin="32,107,0,0" VerticalAlignment="Top" Height="44" Width="338"/>
-        <Button x:Name="Answer_A" Content="Answer A" HorizontalAlignment="Left" Height="38" Margin="19,169,0,0" VerticalAlignment="Top" Width="182" Click="Chose_A"/>
-        <Button x:Name="Answer_B" Content="Answer B" HorizontalAlignment="Left" Height="38" Margin="218,169,0,0" VerticalAlignment="Top" Width="182" Click="Chose_B"/>
-        <Button x:Name="Answer_C" Content="Answer C" HorizontalAlignment="Left" Height="38" Margin="19,240,0,0" VerticalAlignment="Top" Width="182" Click="Chose_C"/>
-        <Button x:Name="Answer_D" Content="Answer D" HorizontalAlignment="Left" Height="38" Margin="218,240,0,0" VerticalAlignment="Top" Width="182" Click="Chose_D"/>
-        <Label x:Name="Result_label"  HorizontalAlignment="Left" Height="57" Margin="19,283,0,0" VerticalAlignment="Top" Width="523"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="/whowanttobeamillionairepilt-ezgif.com-webp-to-jpg-converter.jpg"/>
+        </Grid.Background>
+        <Label x:Name="Question_label" Content="Question" HorizontalAlignment="Left" Margin="19,107,0,0" VerticalAlignment="Top" Height="44" Width="381" Foreground="White" Background="#FF0D50A4"/>
+        <Button x:Name="Answer_A" Content="Answer A" HorizontalAlignment="Left" Height="38" Margin="19,169,0,0" VerticalAlignment="Top" Width="182" Click="Chose_A" Background="#FF0D50A4" Foreground="White"/>
+        <Button x:Name="Answer_B" Content="Answer B" HorizontalAlignment="Left" Height="38" Margin="218,169,0,0" VerticalAlignment="Top" Width="182" Click="Chose_B" Foreground="White" Background="#FF0D50A4"/>
+        <Button x:Name="Answer_C" Content="Answer C" HorizontalAlignment="Left" Height="38" Margin="19,240,0,0" VerticalAlignment="Top" Width="182" Click="Chose_C" Background="#FF0D50A4" Foreground="White"/>
+        <Button x:Name="Answer_D" Content="Answer D" HorizontalAlignment="Left" Height="38" Margin="218,240,0,0" VerticalAlignment="Top" Width="182" Click="Chose_D" Foreground="White" Background="#FF0D50A4"/>
+        <Label x:Name="Result_label"  HorizontalAlignment="Left" Height="57" Margin="19,283,0,0" VerticalAlignment="Top" Width="523" FontSize="30"/>
+        <Label x:Name="money_label_15" Content="15. 1 MILLION" HorizontalAlignment="Left" Margin="645,10,0,0" VerticalAlignment="Top" Height="28" Width="145" FontSize="13" Foreground="#FFFF6E00"/>
+        <Button x:Name="lifeline_1" Content="50/50" HorizontalAlignment="Left" Height="56" Margin="19,368,0,0" VerticalAlignment="Top" Width="56" Click="click_lifeline_1"/>
+        <Button Content="Button" HorizontalAlignment="Left" Height="56" Margin="252,368,0,0" VerticalAlignment="Top" Width="56"/>
+        <Button Content="Button" HorizontalAlignment="Left" Height="56" Margin="173,368,0,0" VerticalAlignment="Top" Width="56"/>
+        <Button x:Name="lifeline_2" Content="Button" HorizontalAlignment="Left" Height="56" Margin="96,368,0,0" VerticalAlignment="Top" Width="56" Click="click_lifeline_2"/>
+        <Label x:Name="money_label_14" Content="14. 500 000€" HorizontalAlignment="Left" Margin="645,38,0,0" VerticalAlignment="Top" Height="28" Width="145" FontSize="13" Foreground="#FFFF6E00"/>
+        <Label x:Name="money_label_13" Content="13. 250 000€" HorizontalAlignment="Left" Margin="645,66,0,0" VerticalAlignment="Top" Height="28" Width="145" FontSize="13" Foreground="#FFFF6E00"/>
+        <Label x:Name="money_label_12" Content="12. 125 000€" HorizontalAlignment="Left" Margin="645,94,0,0" VerticalAlignment="Top" Height="28" Width="145" FontSize="13" Foreground="#FFFF6E00"/>
+        <Label x:Name="money_label_11" Content="11. 63 000€" HorizontalAlignment="Left" Margin="645,122,0,0" VerticalAlignment="Top" Height="27" Width="145" FontSize="13" Foreground="#FFFF6E00"/>
+        <Label x:Name="money_label_10" Content="10. 32 000€" HorizontalAlignment="Left" Margin="645,149,0,0" VerticalAlignment="Top" Height="28" Width="145" FontSize="13" Foreground="#FFFF6E00"/>
+        <Label x:Name="money_label_9" Content="9. 16 000€" HorizontalAlignment="Left" Margin="645,177,0,0" VerticalAlignment="Top" Height="27" Width="145" FontSize="13" Foreground="#FFFF6E00"/>
+        <Label x:Name="money_label_8" Content="8. 8 000€" HorizontalAlignment="Left" Margin="645,205,0,0" VerticalAlignment="Top" Height="27" Width="145" FontSize="13" Foreground="#FFFF6E00"/>
+        <Label x:Name="money_label_7" Content="7. 4 000€" HorizontalAlignment="Left" Margin="645,232,0,0" VerticalAlignment="Top" Height="27" Width="145" FontSize="13" Foreground="#FFFF6E00"/>
+        <Label x:Name="money_label_6" Content="6. 2 000€" HorizontalAlignment="Left" Margin="645,259,0,0" VerticalAlignment="Top" Height="29" Width="145" FontSize="13" Foreground="#FFFF6E00"/>
+        <Label x:Name="money_label_5" Content="5. 1 000€" HorizontalAlignment="Left" Margin="645,288,0,0" VerticalAlignment="Top" Height="27" Width="145" FontSize="13" Foreground="#FFFF6E00"/>
+        <Label x:Name="money_label_4" Content="4. 500€" HorizontalAlignment="Left" Margin="645,315,0,0" VerticalAlignment="Top" Height="27" Width="145" FontSize="13" Foreground="#FFFF6E00"/>
+        <Label x:Name="money_label_3" Content="3. 300€" HorizontalAlignment="Left" Margin="645,342,0,0" VerticalAlignment="Top" Height="27" Width="145" FontSize="13" Foreground="#FFFF6E00"/>
+        <Label x:Name="money_label_2" Content="2. 200€" HorizontalAlignment="Left" Margin="645,369,0,0" VerticalAlignment="Top" Height="27" Width="145" FontSize="13" Foreground="#FFFF6E00"/>
+        <Label x:Name="money_label_1" Content="1. 100€" HorizontalAlignment="Left" Margin="645,396,0,0" VerticalAlignment="Top" Height="27" Width="145" FontSize="13" Foreground="#FFFF6E00"/>
     </Grid>
 </Page>
