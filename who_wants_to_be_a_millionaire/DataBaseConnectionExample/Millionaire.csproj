@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="millionaire_logo.jpg" />
     <None Remove="whowanttobeamillionairepilt-ezgif.com-webp-to-jpg-converter.jpg" />
   </ItemGroup>
 
@@ -17,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="millionaire_logo.jpg" />
     <Resource Include="whowanttobeamillionairepilt-ezgif.com-webp-to-jpg-converter.jpg" />
   </ItemGroup>
 

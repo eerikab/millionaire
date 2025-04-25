@@ -23,15 +23,39 @@ namespace who_wants_to_be_a_millionaire
     /// </summary>
     public partial class MainWindow : Window
     {
+        public string FinalScore { get; set; } = "0";
         public MainWindow()
         {
             InitializeComponent();
+            actual_rules.Visibility = Visibility.Collapsed;
+            actual_rules_Copy.Visibility = Visibility.Collapsed;
         }
 
         private void open_new_page(object sender, RoutedEventArgs e)
         {
             Page1 pg = new Page1(); //uue lehe loomine
             this.Content = pg;
+
+        }
+
+        private void rules_MouseEnter(object sender, MouseEventArgs e)
+        {
+            actual_rules.Visibility = Visibility.Visible;
+        }
+
+        private void rules_MouseLeave(object sender, MouseEventArgs e)
+        {
+            actual_rules.Visibility = Visibility.Collapsed;
+        }
+
+        private void reeglid_MouseEnter(object sender, MouseEventArgs e)
+        {
+            actual_rules_Copy.Visibility = Visibility.Visible;
+        }
+
+        private void reeglid_MouseLeave(object sender, MouseEventArgs e)
+        {
+            actual_rules_Copy.Visibility = Visibility.Collapsed;
         }
     }
 }

@@ -7,7 +7,6 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Page1">
-
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="/whowanttobeamillionairepilt-ezgif.com-webp-to-jpg-converter.jpg"/>
@@ -19,10 +18,10 @@
         <Button x:Name="Answer_D" Content="Answer D" HorizontalAlignment="Left" Height="38" Margin="218,240,0,0" VerticalAlignment="Top" Width="182" Click="Chose_D" Foreground="White" Background="#FF0D50A4"/>
         <Label x:Name="Result_label"  HorizontalAlignment="Left" Height="57" Margin="19,283,0,0" VerticalAlignment="Top" Width="523" FontSize="30"/>
         <Label x:Name="money_label_15" Content="15. 1 MILLION" HorizontalAlignment="Left" Margin="645,10,0,0" VerticalAlignment="Top" Height="28" Width="145" FontSize="13" Foreground="#FFFF6E00"/>
-        <Button x:Name="lifeline_1" Content="50/50" HorizontalAlignment="Left" Height="56" Margin="19,368,0,0" VerticalAlignment="Top" Width="56" Click="click_lifeline_1"/>
-        <Button Content="Button" HorizontalAlignment="Left" Height="56" Margin="252,368,0,0" VerticalAlignment="Top" Width="56"/>
-        <Button Content="Button" HorizontalAlignment="Left" Height="56" Margin="173,368,0,0" VerticalAlignment="Top" Width="56"/>
-        <Button x:Name="lifeline_2" Content="Button" HorizontalAlignment="Left" Height="56" Margin="96,368,0,0" VerticalAlignment="Top" Width="56" Click="click_lifeline_2"/>
+        <Button x:Name="lifeline_1" Content="50/50" HorizontalAlignment="Left" Height="56" Margin="19,368,0,0" VerticalAlignment="Top" Width="56" Click="Click_lifeline_1" Background="#FFFFDD00"/>
+        <Button x:Name="lifeline_4" Content=" Ask the&#x0a;Audience" HorizontalAlignment="Left" Height="56" Margin="252,368,0,0" VerticalAlignment="Top" Width="56" Click="Click_lifeline_4" Background="#FFFFDD00"/>
+        <Button x:Name="lifeline_3" Content="Call a&#x0a;Friend" HorizontalAlignment="Left" Height="56" Margin="173,368,0,0" VerticalAlignment="Top" Width="56" Click="Click_lifeline_3" Background="#FFFFDD00"/>
+        <Button x:Name="lifeline_2" Content="Eliminate&#x0a;1 Wrong" HorizontalAlignment="Left" Height="56" Margin="96,368,0,0" VerticalAlignment="Top" Width="56" Click="Click_lifeline_2" Background="#FFFFDD00"/>
         <Label x:Name="money_label_14" Content="14. 500 000€" HorizontalAlignment="Left" Margin="645,38,0,0" VerticalAlignment="Top" Height="28" Width="145" FontSize="13" Foreground="#FFFF6E00"/>
         <Label x:Name="money_label_13" Content="13. 250 000€" HorizontalAlignment="Left" Margin="645,66,0,0" VerticalAlignment="Top" Height="28" Width="145" FontSize="13" Foreground="#FFFF6E00"/>
         <Label x:Name="money_label_12" Content="12. 125 000€" HorizontalAlignment="Left" Margin="645,94,0,0" VerticalAlignment="Top" Height="28" Width="145" FontSize="13" Foreground="#FFFF6E00"/>
@@ -37,5 +36,6 @@
         <Label x:Name="money_label_3" Content="3. 300€" HorizontalAlignment="Left" Margin="645,342,0,0" VerticalAlignment="Top" Height="27" Width="145" FontSize="13" Foreground="#FFFF6E00"/>
         <Label x:Name="money_label_2" Content="2. 200€" HorizontalAlignment="Left" Margin="645,369,0,0" VerticalAlignment="Top" Height="27" Width="145" FontSize="13" Foreground="#FFFF6E00"/>
         <Label x:Name="money_label_1" Content="1. 100€" HorizontalAlignment="Left" Margin="645,396,0,0" VerticalAlignment="Top" Height="27" Width="145" FontSize="13" Foreground="#FFFF6E00"/>
+        <Button x:Name="cashout_button" Content="Cash Out €" HorizontalAlignment="Left" Height="28" Margin="516,16,0,0" VerticalAlignment="Top" Width="129" Background="#FF0A650E" HorizontalContentAlignment="Center" Click="Click_cashout_button"/>
     </Grid>
 </Page>

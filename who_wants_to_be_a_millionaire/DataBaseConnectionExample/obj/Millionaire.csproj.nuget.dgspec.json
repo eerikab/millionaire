@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\DataBaseConnectionExample\\Millionaire.csproj": {}
+    "C:\\Users\\paulk\\OneDrive\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\DataBaseConnectionExample\\Millionaire.csproj": {}
   },
   "projects": {
-    "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\DataBaseConnectionExample\\Millionaire.csproj": {
+    "C:\\Users\\paulk\\OneDrive\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\DataBaseConnectionExample\\Millionaire.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\DataBaseConnectionExample\\Millionaire.csproj",
+        "projectUniqueName": "C:\\Users\\paulk\\OneDrive\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\DataBaseConnectionExample\\Millionaire.csproj",
         "projectName": "Millionaire",
-        "projectPath": "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\DataBaseConnectionExample\\Millionaire.csproj",
-        "packagesPath": "C:\\Users\\eerik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eerik\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\DataBaseConnectionExample\\obj\\",
+        "projectPath": "C:\\Users\\paulk\\OneDrive\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\DataBaseConnectionExample\\Millionaire.csproj",
+        "packagesPath": "C:\\Users\\paulk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\paulk\\OneDrive\\Documents\\GitHub\\millionaire\\who_wants_to_be_a_millionaire\\DataBaseConnectionExample\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\eerik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\paulk\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -65,6 +65,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.33, 6.0.33]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.33, 6.0.33]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.33, 6.0.33]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.33, 6.0.33]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -73,7 +91,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
