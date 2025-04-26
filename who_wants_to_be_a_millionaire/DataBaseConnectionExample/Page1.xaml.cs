@@ -32,6 +32,10 @@ namespace Millionaire
 
         public List<(string key, Button btn)> pick_50_50;
 
+        public bool can_answer = true;
+
+        public string guaranteed = "0 €";
+
         public Page1()
         {
             InitializeComponent();
@@ -48,11 +52,15 @@ namespace Millionaire
             };
             pick_50_50 = new List<(string key, Button btn)>();
 
-            SetQuestion(0);
+            SetQuestion(level);
         }
 
-        private void SetQuestion(int question_id)
+        private void SetQuestion(int Level)
         {
+            var rand = new Random();
+            //arvestades, et igal tasemel on 5 küsimust
+            int question_id = rand.Next(Level * 5 - 5, Level * 5 - 1);
+
             Question_label.Content = data[question_id][0]; //siia oleks vaja panna ainult küsimus
             Answer_A.Content = "A: " + data[question_id][1]; //siia oleks vaja vastus A
             Answer_B.Content = "B: " + data[question_id][2]; //siia oleks vaja vastus B
@@ -60,13 +68,21 @@ namespace Millionaire
             Answer_D.Content = "D: " + data[question_id][4]; //siia oleks vaja vastus D
 
             correctAnswer = data[question_id][5]; //õige vastus
-            int level = int.Parse(data[question_id][6]);
+            //int level = int.Parse(data[question_id][6]);
 
             incorrect = answers.Where(a => a.key != correctAnswer).ToList();//valed vastused
+
+            can_answer = true;
         }
 
         private async void Select(string selected)
         {
+            //et pärast vastamist ei saaks vastust muuta
+            if (!can_answer)
+                return;
+
+            can_answer = false;
+
             if (correctAnswer == selected)
             {
                 Result_label.Content = "Correct answer!";
@@ -89,26 +105,35 @@ namespace Millionaire
                 if (money_label != null) //et alustades esimesest ei tuleks error
                 {
                     money_label.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFFFAE00"));//paneb võidu summa tausta oranžiks
-                    money_label.Foreground = System.Windows.Media.Brushes.White;//paneb võidusumma teksti valgeks
+                    if (level % 5 == 0)
+                        money_label.Foreground = System.Windows.Media.Brushes.White;//paneb võidusumma teksti valgeks
+                    else
+                        money_label.Foreground = System.Windows.Media.Brushes.Black;
                 }
 
                 if (previous_money_label != null) //et alustades esimesest ei tuleks error
                 {
                     previous_money_label.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#00FFFFFF"));//taastab eelmise võidu summa tausta
-                    previous_money_label.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFFF6E00"));//taastab eelmise võidu summa teksti
+                    if (level % 5 == 1)
+                        previous_money_label.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFFFFFFF"));//taastab eelmise võidu summa teksti
+                    else
+                        previous_money_label.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFFF6E00"));//taastab eelmise võidu summa teksti
                 }
 
                 
                 main.FinalScore = money_label.Content as string;
+                if (level % 5 == 0) //garanteeritud summa iga 5 taseme tagant
+                    guaranteed = main.FinalScore;
                 await Task.Delay(1000); // 1 sekund ooteaega
                 Result_label.Content = "";
+
                 level += 1;
                 SetQuestion(level);//paneb uued küsimused ja vastused
             }
             else
             {
                 var main = (MainWindow)Application.Current.MainWindow;
-                main.FinalScore = "Game over, you lost!";
+                main.FinalScore = guaranteed;
                 Result_label.Content = "Wrong answer!";
                 Result_label.Foreground = System.Windows.Media.Brushes.Red;
                 await Task.Delay(3000); // 3 sekund ooteaega
