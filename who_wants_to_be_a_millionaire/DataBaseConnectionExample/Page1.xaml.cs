@@ -143,7 +143,7 @@ namespace Millionaire
         private void UnhighlightLabel(Label lbl, int lvl)
         {
             lbl.Background = Brushes.Transparent;
-            lbl.Foreground = (lvl % 5 == 1)
+            lbl.Foreground = (lvl % 5 == 0)
                 ? Brushes.White
                 : new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFFF6E00"));
         }
@@ -200,7 +200,7 @@ namespace Millionaire
 
         private void Click_cashout_button(object sender, RoutedEventArgs e)
         {
-            if (_main.FinalScore != "0 €")
+            if (_level != 1)
             {
                 new End_Window().Show();
                 _main.Hide();
