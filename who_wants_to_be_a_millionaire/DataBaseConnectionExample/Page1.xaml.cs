@@ -1,254 +1,209 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using DataBaseConnectionExample;
 using who_wants_to_be_a_millionaire;
 
 namespace Millionaire
 {
     /// <summary>
-    /// Interaction logic for Page1.xaml
+    /// Interaction logic for GamePage.xaml
     /// </summary>
     public partial class Page1 : Page
-    {   
-        public string correctAnswer = "";
-        public List<List<string>> data;
-        public int level = 1;
+    {
+        private readonly MainWindow _main;
+        private readonly List<List<string>> _questions;
+        private readonly List<(string Key, Button Btn)> _answerButtons;
+        private readonly Random _random = new Random();
 
-        public List<(string key, Button btn)> answers;
-        public List<(string key, Button btn)> incorrect;
+        private int _level = 1;
+        private bool _canAnswer = true;
+        private string _correctAnswer = string.Empty;
+        private string _guaranteed = "0 €";
 
-        public List<(string key, Button btn)> pick_50_50;
+        private void Chose_A(object sender, RoutedEventArgs e) => _ = HandleAnswerAsync("a");
+        private void Chose_B(object sender, RoutedEventArgs e) => _ = HandleAnswerAsync("b");
+        private void Chose_C(object sender, RoutedEventArgs e) => _ = HandleAnswerAsync("c");
+        private void Chose_D(object sender, RoutedEventArgs e) => _ = HandleAnswerAsync("d");
 
-        public bool can_answer = true;
-
-        public string guaranteed = "0 €";
-
-        public Page1()
+        public Page1(MainWindow main)
         {
             InitializeComponent();
 
-            DbRepository dbRepository = new DbRepository();
-            data = dbRepository.GetQuestions();
+            _main = main ?? throw new ArgumentNullException(nameof(main));
+            var db = new DbRepository();
+            _questions = db.GetQuestions();
 
-            answers = new List<(string key, Button btn)>//kõik nupud koos vastuse tähisega
+            // Map answer keys to buttons
+            _answerButtons = new List<(string, Button)>
             {
                 ("a", Answer_A),
                 ("b", Answer_B),
                 ("c", Answer_C),
                 ("d", Answer_D)
             };
-            pick_50_50 = new List<(string key, Button btn)>();
 
-            SetQuestion(level);
+            LoadQuestion();
         }
 
-        private void SetQuestion(int Level)
+        private void LoadQuestion()
         {
-            var rand = new Random();
-            //arvestades, et igal tasemel on 5 küsimust
-            int question_id = rand.Next(Level * 5 - 5, Level * 5 - 1);
+            // Reset lifelines and state
+            _canAnswer = true;
+            Pick5050.Clear();
 
-            Question_label.Content = data[question_id][0]; //siia oleks vaja panna ainult küsimus
-            Answer_A.Content = "A: " + data[question_id][1]; //siia oleks vaja vastus A
-            Answer_B.Content = "B: " + data[question_id][2]; //siia oleks vaja vastus B
-            Answer_C.Content = "C: " + data[question_id][3]; //siia oleks vaja vastus C
-            Answer_D.Content = "D: " + data[question_id][4]; //siia oleks vaja vastus D
+            // Select a random question for current level
+            int start = (_level - 1) * 5;
+            int idx = _random.Next(start, Math.Min(start + 5, _questions.Count));
+            var q = _questions[idx];
 
-            correctAnswer = data[question_id][5]; //õige vastus
-            //int level = int.Parse(data[question_id][6]);
-
-            incorrect = answers.Where(a => a.key != correctAnswer).ToList();//valed vastused
-
-            can_answer = true;
-        }
-
-        private async void Select(string selected)
-        {
-            //et pärast vastamist ei saaks vastust muuta
-            if (!can_answer)
-                return;
-
-            can_answer = false;
-
-            if (correctAnswer == selected)
+            Question_label.Content = q[0];
+            for (int i = 0; i < _answerButtons.Count; i++)
             {
-                Result_label.Content = "Correct answer!";
-                Result_label.Foreground = System.Windows.Media.Brushes.Green;
-
-                var money_label = this.FindName("money_label_" + level.ToString()) as Label;
-                var main = (MainWindow)Application.Current.MainWindow;
-
-                if (level == 15)//lõpu õnnitlus
-                {
-                    main.FinalScore = "won";
-                    End_Window endpage = new End_Window();
-                    endpage.Show(); //lõpu ekraani kuvamine
-                    Window.GetWindow(this)?.Close(); //selle page sulgemine
-                    return;
-                }
-
-                var previous_money_label = this.FindName("money_label_" + (level-1).ToString()) as Label;
-
-                if (money_label != null) //et alustades esimesest ei tuleks error
-                {
-                    money_label.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFFFAE00"));//paneb võidu summa tausta oranžiks
-                    if (level % 5 == 0)
-                        money_label.Foreground = System.Windows.Media.Brushes.White;//paneb võidusumma teksti valgeks
-                    else
-                        money_label.Foreground = System.Windows.Media.Brushes.Black;
-                }
-
-                if (previous_money_label != null) //et alustades esimesest ei tuleks error
-                {
-                    previous_money_label.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#00FFFFFF"));//taastab eelmise võidu summa tausta
-                    if (level % 5 == 1)
-                        previous_money_label.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFFFFFFF"));//taastab eelmise võidu summa teksti
-                    else
-                        previous_money_label.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFFF6E00"));//taastab eelmise võidu summa teksti
-                }
-
-                
-                main.FinalScore = money_label.Content as string;
-                if (level % 5 == 0) //garanteeritud summa iga 5 taseme tagant
-                    guaranteed = main.FinalScore;
-                await Task.Delay(1000); // 1 sekund ooteaega
-                Result_label.Content = "";
-
-                level += 1;
-                SetQuestion(level);//paneb uued küsimused ja vastused
+                var (key, btn) = _answerButtons[i];
+                btn.Content = $"{key.ToUpper()}: {q[i + 1]}";
+                btn.Tag = key;
+                btn.IsEnabled = true;
             }
+
+            _correctAnswer = q[5];
+        }
+
+        private async Task HandleAnswerAsync(string selected)
+        {
+            if (!_canAnswer) return;
+            _canAnswer = false;
+
+            if (selected == _correctAnswer)
+                await ProcessCorrectAsync();
             else
+                await ProcessIncorrectAsync();
+        }
+
+        private async Task ProcessCorrectAsync()
+        {
+            ShowResult("Correct answer!", Brushes.Green);
+
+            // Update money labels
+            var moneyLabel = FindName($"money_label_{_level}") as Label;
+            if (moneyLabel != null)
+                HighlightLabel(moneyLabel, _level);
+
+            var prevLabel = FindName($"money_label_{_level - 1}") as Label;
+            if (prevLabel != null)
+                UnhighlightLabel(prevLabel, _level - 1);
+
+            _main.FinalScore = moneyLabel?.Content as string;
+            if (_level % 5 == 0)
+                _guaranteed = _main.FinalScore;
+
+            await Task.Delay(1000);
+            ClearResult();
+
+            if (_level == 15)
             {
-                var main = (MainWindow)Application.Current.MainWindow;
-                main.FinalScore = guaranteed;
-                Result_label.Content = "Wrong answer!";
-                Result_label.Foreground = System.Windows.Media.Brushes.Red;
-                await Task.Delay(3000); // 3 sekund ooteaega
-                End_Window endpage = new End_Window();
-                endpage.Show(); //lõpu ekraani kuvamine
-                Window.GetWindow(this)?.Close(); //selle page sulgemine
-            }
-        }
-
-        private void Chose_A(object sender, RoutedEventArgs e)
-        {
-            Select("a");
-        }
-
-        private void Chose_B(object sender, RoutedEventArgs e)
-        {
-            Select("b");
-        }
-
-        private void Chose_C(object sender, RoutedEventArgs e)
-        {
-            Select("c");
-        }
-
-        private void Chose_D(object sender, RoutedEventArgs e)
-        {
-            Select("d");
-        }
-
-        private void Click_lifeline_1(object sender, RoutedEventArgs e)//lifeline 50/50
-        {
-            var rnd = new Random(); 
-            var randomWrong = incorrect[rnd.Next(incorrect.Count)]; //üks juhuslik vale vastus
-
-            foreach (var wrong in incorrect)
-                {
-                    if (wrong != randomWrong && !pick_50_50.Contains(wrong))
-                    {
-                        pick_50_50.Add(wrong);
-                        wrong.btn.Content = ""; //kustutab kaks vale vastust
-                    }
-                }
-
-            (sender as Button).IsEnabled = false; //deaktiveerib 50/50 nupu
-
-        }
-
-        private async void Click_lifeline_2(object sender, RoutedEventArgs e) //üks vale välja
-        {
-            while (true)
-            {
-                var random = new Random();
-                var RandomAnswer = incorrect[random.Next(incorrect.Count)]; //valib juhusliku vastuse
-                if (!pick_50_50.Contains(RandomAnswer))//et ei oleks sama, mis 50/50 lifelines
-                {
-                    pick_50_50.Add(RandomAnswer);
-                    RandomAnswer.btn.Content = ""; //kustutab vale vastuse
-                    break;
-                }
-                
+                _main.FinalScore = "won";
+                new End_Window().Show();
+                _main.Hide();
+                return;
             }
 
-            (sender as Button).IsEnabled = false; //deaktiveerib nupu
+            _level++;
+            LoadQuestion();
         }
 
-        private void Click_lifeline_3(object sender, RoutedEventArgs e) //helista sõbrale
+        private async Task ProcessIncorrectAsync()
         {
-            var random = new Random();
-            var RandomAnswer = answers[random.Next(answers.Count)]; //valib juhusliku vastuse
+            _main.FinalScore = _guaranteed;
+            ShowResult("Wrong answer!", Brushes.Red);
+            await Task.Delay(3000);
 
-            if (RandomAnswer.btn.Content != null && !RandomAnswer.btn.Content.ToString().Contains(" (friend pick)"))
-            {
-                RandomAnswer.btn.Content += " (friend pick)";
-            }
-
-            (sender as Button).IsEnabled = false; //deaktiveerib nupu
-
+            new End_Window().Show();
+            _main.Hide();
         }
 
-        private void Click_lifeline_4(object sender, RoutedEventArgs e) //küsi publikult
+        private void ShowResult(string text, Brush color)
         {
+            Result_label.Content = text;
+            Result_label.Foreground = color;
+        }
 
-            foreach (var i in answers)
+        private void ClearResult() => Result_label.Content = string.Empty;
+
+        private void HighlightLabel(Label lbl, int lvl)
+        {
+            lbl.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFFFAE00"));
+            lbl.Foreground = (lvl % 5 == 0) ? Brushes.White : Brushes.Black;
+        }
+
+        private void UnhighlightLabel(Label lbl, int lvl)
+        {
+            lbl.Background = Brushes.Transparent;
+            lbl.Foreground = (lvl % 5 == 1)
+                ? Brushes.White
+                : new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFFF6E00"));
+        }
+
+        // Answer clicked
+        private void Answer_Click(object sender, RoutedEventArgs e)
+        {
+            if (sender is Button btn && btn.Tag is string key)
+                _ = HandleAnswerAsync(key);
+        }
+
+        // Lifelines
+        private readonly List<(string Key, Button Btn)> Pick5050 = new List<(string, Button)>();
+
+        private void Click_lifeline_1(object sender, RoutedEventArgs e)
+        {
+            var wrongs = _answerButtons.Where(x => x.Key != _correctAnswer).ToList();
+            var keep = wrongs[_random.Next(wrongs.Count)];
+            foreach (var w in wrongs)
+                if (w.Key != keep.Key)
+                {
+                    w.Btn.Content = string.Empty;
+                    Pick5050.Add(w);
+                }
+            (sender as Button).IsEnabled = false;
+        }
+
+        private void Click_lifeline_2(object sender, RoutedEventArgs e)
+        {
+            var wrongs = _answerButtons.Where(x => x.Key != _correctAnswer && !Pick5050.Any(p => p.Key == x.Key)).ToList();
+            var rem = wrongs[_random.Next(wrongs.Count)];
+            rem.Btn.Content = string.Empty;
+            Pick5050.Add(rem);
+            (sender as Button).IsEnabled = false;
+        }
+
+        private void Click_lifeline_3(object sender, RoutedEventArgs e)
+        {
+            var choice = _answerButtons[_random.Next(_answerButtons.Count)];
+            choice.Btn.Content += " (friend pick)";
+            (sender as Button).IsEnabled = false;
+        }
+
+        private void Click_lifeline_4(object sender, RoutedEventArgs e)
+        {
+            foreach (var (key, btn) in _answerButtons)
             {
-                if (i.key != correctAnswer)
-                {
-                    Random random = new Random();
-                    int RandomNumber = random.Next(0, 60);
-
-                    i.btn.Content += " "+RandomNumber + "%"; //paneb valedele vastustele taha protsendi 0-60
-                }
-
-                else
-                {
-                    Random random = new Random();
-                    int RandomNumber = random.Next(40, 100); 
-
-                    i.btn.Content += " " + RandomNumber + "%"; //paneb õigele vastuse taha protsendi 40-100
-                }
-
+                int percent = _random.Next(key == _correctAnswer ? 40 : 0,
+                                            key == _correctAnswer ? 101 : 61);
+                btn.Content += $" {percent}%";
             }
-
-            (sender as Button).IsEnabled = false; //deaktiveerib nupu
-
+            (sender as Button).IsEnabled = false;
         }
 
         private void Click_cashout_button(object sender, RoutedEventArgs e)
         {
-            var main = (MainWindow)Application.Current.MainWindow;
-
-            if (main.FinalScore != "0")
+            if (_main.FinalScore != "0 €")
             {
-                End_Window endpage = new End_Window();
-                endpage.Show(); //lõpu ekraani kuvamine
-                Window.GetWindow(this)?.Close(); //selle page sulgemine
+                new End_Window().Show();
+                _main.Hide();
             }
         }
     }

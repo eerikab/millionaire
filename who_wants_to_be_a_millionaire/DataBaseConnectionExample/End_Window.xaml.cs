@@ -48,8 +48,11 @@ namespace Millionaire
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Page1 pg = new Page1(); //uue lehe loomine
-            this.Content = pg;
+            var main = Application.Current.MainWindow as MainWindow;
+            if (main == null) return;
+            main.Content = new Page1(main);
+            this.Close();
+            main.Show();
         }
     }
 }

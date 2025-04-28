@@ -5,21 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:who_wants_to_be_a_millionaire"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-
-    <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="/millionaire_logo.jpg"/>
-        </Grid.Background>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="43*"/>
-            <ColumnDefinition Width="7*"/>
-        </Grid.ColumnDefinitions>
-        <Button Content="START GAME" HorizontalAlignment="Left" VerticalAlignment="Top" Click="open_new_page" Height="61" Width="172" Margin="306,113,0,0" FontSize="25" Background="#FF0D50A4" BorderBrush="Black" BorderThickness="3"/>
-        <Label x:Name="rules_label" Content="Game rules" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="53" Width="146" MouseEnter="rules_MouseEnter" MouseLeave="rules_MouseLeave" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF0D50A4" FontSize="20" Foreground="White"/>
-        <Label x:Name="actual_rules" Content="You need to answer questions.&#xA;From four options, click on the &#xA;correct one. If you answer &#xA;correctly, you win money.&#xA;If you answer incorrectly, you fall &#xA;back to the last guaranteed&#xA;earnings (every 5 levels). &#xA;If you wish to end the game &#xA;and collect your money, &#xA;click &quot;Walk Away&quot;.&#xA;&#xA;There are also four lifelines:&#xA;50/50 – two incorrect answers &#xA;will be removed&#xA;Eliminate 1 Wrong – one incorrect &#xA;answer will be removed&#xA;Call a Friend – you'll see which &#xA;answer your friend suggests&#xA;Ask the Audience – you'll see &#xA;what percentage of the audience &#xA;chose each answer" HorizontalAlignment="Left" Margin="10,68,0,0" VerticalAlignment="Top" Height="356" Width="195" Foreground="White"/>
-        <Label x:Name="rules_label_Copy" Content="Mängu reeglid" HorizontalAlignment="Left" Margin="600,10,0,0" VerticalAlignment="Top" Height="53" Width="144" MouseEnter="reeglid_MouseEnter" MouseLeave="reeglid_MouseLeave" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF0D50A4" FontSize="20" Foreground="White" Grid.ColumnSpan="2"/>
-        <Label x:Name="actual_rules_Copy" Content="Pead vastama küsimustele.&#xA;Nelja valiku seast vajuta&#xA;õigele vastusele. Kui vastad&#xA;õigesti, võidad raha.&#xA;Vale vastuse korral langed tagasi&#xD;&#xA;viimasele garanteeritud&#xD;&#xA;summale (iga 5. küsimus). &#xD;&#xA;Kui soovid mängu lõpetada ja&#xA;raha välja võtta, vajuta&#xA;„Walk Away“.&#xA;&#xA;Sul on ka neli abivahendit:&#xA;50/50 – kaks vale vastust&#xA;eemaldatakse&#xA;Eliminate 1 Wrong – üks vale&#xA;vastus eemaldatakse&#xA;Call a Friend – näed,&#xA;millise vastuse sõber pakub&#xA;Ask the Audience – näed,&#xA;mitu % publikust valis iga&#xA;vastuse&#xA;&#xA;" HorizontalAlignment="Left" Margin="595,63,0,0" VerticalAlignment="Top" Height="356" Width="195" Foreground="White" Grid.ColumnSpan="2"/>
-
-    </Grid>
+        Title="MainWindow"
+        SizeToContent="Manual">
+    <Viewbox Stretch="Fill">
+        <Grid Width="800" Height="450">
+            <Grid.Background>
+                <ImageBrush ImageSource="/millionaire_logo.jpg" Stretch="Fill" AlignmentX="Center" AlignmentY="Center" ViewportUnits="RelativeToBoundingBox"/>
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="43*"/>
+                <ColumnDefinition Width="7*"/>
+            </Grid.ColumnDefinitions>
+            <Button Content="START GAME" HorizontalAlignment="Left" VerticalAlignment="Top" Click="open_new_page" Height="61" Width="172" Margin="306,113,0,0" FontSize="25" Background="#FF0D50A4" BorderBrush="Black" BorderThickness="3"/>
+            <Label x:Name="rules_label" Content="Game rules" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="53" Width="146" MouseEnter="rules_MouseEnter" MouseLeave="rules_MouseLeave" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF0D50A4" FontSize="20" Foreground="White"/>
+            <Label x:Name="actual_rules" Content="You need to answer questions.&#xA;From four options, click on the &#xA;correct one. If you answer &#xA;correctly, you win money.&#xA;If you answer incorrectly, you fall &#xA;back to the last guaranteed&#xA;earnings (every 5 levels). &#xA;If you wish to end the game &#xA;and collect your money, &#xA;click &quot;Walk Away&quot;.&#xA;&#xA;There are also four lifelines:&#xA;50/50 – two incorrect answers &#xA;will be removed&#xA;Eliminate 1 Wrong – one incorrect &#xA;answer will be removed&#xA;Call a Friend – you'll see which &#xA;answer your friend suggests&#xA;Ask the Audience – you'll see &#xA;what percentage of the audience &#xA;chose each answer" HorizontalAlignment="Left" Margin="10,68,0,0" VerticalAlignment="Top" Height="356" Width="195" Foreground="White"/>
+            <Label x:Name="rules_label_Copy" Content="Mängu reeglid" HorizontalAlignment="Left" Margin="600,10,0,0" VerticalAlignment="Top" Height="53" Width="144" MouseEnter="reeglid_MouseEnter" MouseLeave="reeglid_MouseLeave" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF0D50A4" FontSize="20" Foreground="White" Grid.ColumnSpan="2"/>
+            <Label x:Name="actual_rules_Copy" Content="Pead vastama küsimustele.&#xA;Nelja valiku seast vajuta&#xA;õigele vastusele. Kui vastad&#xA;õigesti, võidad raha.&#xA;Vale vastuse korral langed tagasi&#xD;&#xA;viimasele garanteeritud&#xD;&#xA;summale (iga 5. küsimus). &#xD;&#xA;Kui soovid mängu lõpetada ja&#xA;raha välja võtta, vajuta&#xA;„Walk Away“.&#xA;&#xA;Sul on ka neli abivahendit:&#xA;50/50 – kaks vale vastust&#xA;eemaldatakse&#xA;Eliminate 1 Wrong – üks vale&#xA;vastus eemaldatakse&#xA;Call a Friend – näed,&#xA;millise vastuse sõber pakub&#xA;Ask the Audience – näed,&#xA;mitu % publikust valis iga&#xA;vastuse&#xA;&#xA;" HorizontalAlignment="Left" Margin="595,63,0,0" VerticalAlignment="Top" Height="356" Width="195" Foreground="White" Grid.ColumnSpan="2"/>
+        </Grid>
+    </Viewbox>
 </Window>

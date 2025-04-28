@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\Eerik\Documents\GitHub\millionaire\who_wants_to_be_a_millionaire\DataBaseConnectionExample\obj\Debug\net6.0-windows\
+C:\Users\paulk\OneDrive\Documents\GitHub\millionaire\who_wants_to_be_a_millionaire\DataBaseConnectionExample\obj\Debug\net6.0-windows\
 Millionaire
 none
 false
-TRACE;DEBUG;NET;NET6_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-C:\Users\Eerik\Documents\GitHub\millionaire\who_wants_to_be_a_millionaire\DataBaseConnectionExample\App.xaml
+TRACE;DEBUG;NET;NET6_0;NETCOREAPP
+C:\Users\paulk\OneDrive\Documents\GitHub\millionaire\who_wants_to_be_a_millionaire\DataBaseConnectionExample\App.xaml
 3-2097753163
 
 82017323654
-20380476409
+203-254090954
 End_Window.xaml;MainWindow.xaml;Page1.xaml;
 
 False

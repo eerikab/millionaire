@@ -7,8 +7,9 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Page1">
-    <Grid>
-        <Grid.Background>
+    <Viewbox Stretch="Uniform">
+        <Grid Width="800" Height="450">
+            <Grid.Background>
             <ImageBrush ImageSource="/whowanttobeamillionairepilt-ezgif.com-webp-to-jpg-converter.jpg"/>
         </Grid.Background>
         <Label x:Name="Question_label" Content="Question" HorizontalAlignment="Left" Margin="19,107,0,0" VerticalAlignment="Top" Height="44" Width="381" Foreground="White" Background="#FF0D50A4"/>
@@ -37,5 +38,6 @@
         <Label x:Name="money_label_2" Content="2. 200€" HorizontalAlignment="Left" Margin="645,346,0,0" VerticalAlignment="Top" Height="25" Width="126" FontSize="13" Foreground="#FFFF6E00"/>
         <Label x:Name="money_label_1" Content="1. 100€" HorizontalAlignment="Left" Margin="645,371,0,0" VerticalAlignment="Top" Height="25" Width="126" FontSize="13" Foreground="#FFFF6E00"/>
         <Button x:Name="cashout_button" Content="Walk Away €" HorizontalAlignment="Left" Height="28" Margin="516,16,0,0" VerticalAlignment="Top" Width="129" Background="#FF0A650E" HorizontalContentAlignment="Center" Click="Click_cashout_button"/>
-    </Grid>
+        </Grid>
+    </Viewbox>
 </Page>

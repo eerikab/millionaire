@@ -33,9 +33,8 @@ namespace who_wants_to_be_a_millionaire
 
         private void open_new_page(object sender, RoutedEventArgs e)
         {
-            Page1 pg = new Page1(); //uue lehe loomine
+            Page1 pg = new Page1(this); //uue lehe loomine
             this.Content = pg;
-
         }
 
         private void rules_MouseEnter(object sender, MouseEventArgs e)
