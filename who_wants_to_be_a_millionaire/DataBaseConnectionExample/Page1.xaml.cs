@@ -24,6 +24,7 @@ namespace Millionaire
         private bool _canAnswer = true;
         private string _correctAnswer = string.Empty;
         private string _guaranteed = "0 €";
+        private Button _correctButton;
 
         private void Chose_A(object sender, RoutedEventArgs e) => _ = HandleAnswerAsync("a");
         private void Chose_B(object sender, RoutedEventArgs e) => _ = HandleAnswerAsync("b");
@@ -46,6 +47,8 @@ namespace Millionaire
                 ("c", Answer_C),
                 ("d", Answer_D)
             };
+
+            _correctButton = Answer_A;
 
             LoadQuestion();
         }
@@ -71,6 +74,14 @@ namespace Millionaire
             }
 
             _correctAnswer = q[5];
+
+            switch (_correctAnswer)
+            {
+                case "a": _correctButton = Answer_A; break;
+                case "b": _correctButton = Answer_B; break;
+                case "c": _correctButton = Answer_C; break;
+                case "d": _correctButton = Answer_D; break;
+            }
         }
 
         private async Task HandleAnswerAsync(string selected)
@@ -158,7 +169,7 @@ namespace Millionaire
         // Lifelines
         private readonly List<(string Key, Button Btn)> Pick5050 = new List<(string, Button)>();
 
-        private void Click_lifeline_1(object sender, RoutedEventArgs e)
+        private void Click_lifeline_1(object sender, RoutedEventArgs e) // 50-50
         {
             var wrongs = _answerButtons.Where(x => x.Key != _correctAnswer).ToList();
             var keep = wrongs[_random.Next(wrongs.Count)];
@@ -171,7 +182,7 @@ namespace Millionaire
             (sender as Button).IsEnabled = false;
         }
 
-        private void Click_lifeline_2(object sender, RoutedEventArgs e)
+        private void Click_lifeline_2(object sender, RoutedEventArgs e) // 1 wrong answer
         {
             var wrongs = _answerButtons.Where(x => x.Key != _correctAnswer && !Pick5050.Any(p => p.Key == x.Key)).ToList();
             var rem = wrongs[_random.Next(wrongs.Count)];
@@ -180,20 +191,41 @@ namespace Millionaire
             (sender as Button).IsEnabled = false;
         }
 
-        private void Click_lifeline_3(object sender, RoutedEventArgs e)
+        private void Click_lifeline_3(object sender, RoutedEventArgs e) // Phone-A-Friend
         {
-            var choice = _answerButtons[_random.Next(_answerButtons.Count)];
-            choice.Btn.Content += " (friend pick)";
+            var choice = _answerButtons[0].Btn;
+            if (_random.Next(2) == 1)
+                choice = _correctButton;
+            else
+                do choice = _answerButtons[_random.Next(_answerButtons.Count)].Btn;
+                while (choice.Content == string.Empty);
+            choice.Content += " (friend pick)";
             (sender as Button).IsEnabled = false;
         }
 
-        private void Click_lifeline_4(object sender, RoutedEventArgs e)
+        private void Click_lifeline_4(object sender, RoutedEventArgs e) // Ask the Audience
         {
+            int optionsLeft = 3 - Pick5050.Count;
+            int percent = 0;
+            if (optionsLeft > 0)
+                percent = _random.Next(20, 100);
+            else
+                percent = 100;
+            _correctButton.Content += $" {percent}%";
+            int percentLeft = 100 - percent;
             foreach (var (key, btn) in _answerButtons)
             {
-                int percent = _random.Next(key == _correctAnswer ? 40 : 0,
-                                            key == _correctAnswer ? 101 : 61);
+                if (key == _correctAnswer || btn.Content == string.Empty) 
+                    continue;
+
+                if (optionsLeft == 1)
+                    percent = percentLeft;
+                else
+                    percent = _random.Next(percentLeft + 1);
                 btn.Content += $" {percent}%";
+
+                percentLeft -= percent;
+                optionsLeft -= 1;
             }
             (sender as Button).IsEnabled = false;
         }

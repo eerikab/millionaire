@@ -21,7 +21,7 @@
         <Label x:Name="money_label_15" Content="15. 1 MILLION" HorizontalAlignment="Left" Margin="645,10,0,0" VerticalAlignment="Top" Height="26" Width="126" FontSize="13" Foreground="#FFFFFFFF"/>
         <Button x:Name="lifeline_1" Content="50/50" HorizontalAlignment="Left" Height="56" Margin="19,340,0,0" VerticalAlignment="Top" Width="56" Click="Click_lifeline_1" Background="#FFFFDD00"/>
         <Button x:Name="lifeline_4" Content=" Ask the&#x0a;Audience" HorizontalAlignment="Left" Height="56" Margin="252,340,0,0" VerticalAlignment="Top" Width="56" Click="Click_lifeline_4" Background="#FFFFDD00"/>
-        <Button x:Name="lifeline_3" Content="Call a&#x0a;Friend" HorizontalAlignment="Left" Height="56" Margin="170,340,0,0" VerticalAlignment="Top" Width="56" Click="Click_lifeline_3" Background="#FFFFDD00"/>
+        <Button x:Name="lifeline_3" Content="Phone a&#xA; Friend" HorizontalAlignment="Left" Height="56" Margin="170,340,0,0" VerticalAlignment="Top" Width="56" Click="Click_lifeline_3" Background="#FFFFDD00"/>
         <Button x:Name="lifeline_2" Content="Eliminate&#x0a;1 Wrong" HorizontalAlignment="Left" Height="56" Margin="96,340,0,0" VerticalAlignment="Top" Width="56" Click="Click_lifeline_2" Background="#FFFFDD00"/>
         <Label x:Name="money_label_14" Content="14. 500 000€" HorizontalAlignment="Left" Margin="645,36,0,0" VerticalAlignment="Top" Height="26" Width="126" FontSize="13" Foreground="#FFFF6E00"/>
         <Label x:Name="money_label_13" Content="13. 250 000€" HorizontalAlignment="Left" Margin="645,62,0,0" VerticalAlignment="Top" Height="27" Width="126" FontSize="13" Foreground="#FFFF6E00"/>
